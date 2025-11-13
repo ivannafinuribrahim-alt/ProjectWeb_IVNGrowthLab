@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IVN Growth Lab | Grow Smarter, Scale Faster</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      color: #f9fafb;
+    }
+
+    header {
+      backdrop-filter: blur(8px);
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* Template umum */
+    .section-bg {
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+      color: white;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(9, 39, 74, 0.8);
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(6px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full shadow z-50">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <h1 class="text-2xl font-bold text-blue-700">IVN Growth Lab</h1>
+      <ul class="flex space-x-6 text-gray-700 font-medium">
+        <li><a href="#beranda" class="hover:text-blue-600 transition">Beranda</a></li>
+        <li><a href="#tentang" class="hover:text-blue-600 transition">Tentang</a></li>
+        <li><a href="#visi" class="hover:text-blue-600 transition">Visi & Misi</a></li>
+        <li><a href="#layanan" class="hover:text-blue-600 transition">Layanan</a></li>
+        <li><a href="#testimoni" class="hover:text-blue-600 transition">Testimoni</a></li>
+        <li><a href="#kontak" class="hover:text-blue-600 transition">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="beranda" class="section-bg h-screen flex flex-col justify-center items-center text-center px-6" style="background-image: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1600&q=80');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">Grow Smarter, Scale Faster</h2>
+      <p class="text-lg md:text-xl mb-6 max-w-2xl text-gray-100">Tumbuh lebih cerdas dan tingkatkan skala bisnismu bersama IVN Growth Lab — mitra konsultansi yang mendorong inovasi dan strategi bisnis berkelanjutan.</p>
+      <a href="#kontak" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:from-blue-700 hover:to-blue-900 transition-all">Konsultasi Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section id="tentang" class="section-bg py-20 px-6 fade-in" style="background-image: url('https://images.unsplash.com/photo-1573497019543-2b3d4a3b6b7b?auto=format&fit=crop&w=1600&q=80');">
+    <div class="overlay"></div>
+    <div class="content max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-white mb-4">Tentang Kami</h3>
+      <p class="text-gray-100 max-w-3xl mx-auto">IVN Growth Lab adalah perusahaan konsultansi bisnis yang membantu pelaku usaha mengoptimalkan potensi dan strategi untuk mencapai pertumbuhan yang lebih cepat dan berkelanjutan. Kami percaya bahwa keberhasilan bisnis tidak hanya bergantung pada kerja keras, tetapi juga pada arah yang tepat dan strategi yang cerdas.</p>
+    </div>
+  </section>
+
+  <!-- Visi & Misi -->
+  <section id="visi" class="section-bg py-20 px-6 fade-in" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80');">
+    <div class="overlay"></div>
+    <div class="content max-w-5xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-white mb-6">Visi & Misi</h3>
+      <p class="mb-10 text-gray-100">Menjadi perusahaan konsultansi bisnis terpercaya yang membantu organisasi dan individu berkembang melalui strategi cerdas, inovasi berkelanjutan, dan kolaborasi berorientasi hasil.</p>
+      <div class="grid md:grid-cols-2 gap-8 text-left">
+        <div class="card p-6 rounded-xl">
+          <h4 class="text-xl font-semibold mb-3 text-white">Visi</h4>
+          <p>Menjadi mitra utama bagi pelaku bisnis dalam membangun pertumbuhan yang berkelanjutan melalui penerapan strategi modern, berbasis data, dan adaptif terhadap perubahan pasar global.</p>
+        </div>
+        <div class="card p-6 rounded-xl">
+          <h4 class="text-xl font-semibold mb-3 text-white">Misi</h4>
+          <ul class="list-disc list-inside space-y-2 text-gray-100">
+            <li>Menyediakan solusi konsultansi yang relevan dan berbasis data.</li>
+            <li>Mendukung transformasi digital dan efisiensi bisnis klien.</li>
+            <li>Mendorong inovasi melalui kolaborasi lintas sektor.</li>
+            <li>Meningkatkan kompetensi pelaku usaha melalui pelatihan profesional.</li>
+            <li>Menumbuhkan budaya bisnis yang beretika dan berdaya saing global.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Layanan -->
+  <section id="layanan" class="section-bg py-20 px-6 fade-in" style="background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=80');">
+    <div class="overlay"></div>
+    <div class="content max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-white mb-10">Layanan Kami</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3 text-white">Konsultasi Bisnis</h4>
+          <p>Membantu merancang strategi bisnis dan model operasional yang efisien untuk peningkatan profitabilitas.</p>
+        </div>
+        <div class="card p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3 text-white">Transformasi Digital</h4>
+          <p>Mengoptimalkan teknologi untuk meningkatkan kinerja dan daya saing perusahaan.</p>
+        </div>
+        <div class="card p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3 text-white">Riset & Analisis Pasar</h4>
+          <p>Memberikan wawasan mendalam berbasis data untuk mendukung pengambilan keputusan yang tepat.</p>
+        </div>
+        <div class="card p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3 text-white">Pelatihan & Workshop</h4>
+          <p>Meningkatkan kemampuan tim bisnis Anda melalui pelatihan strategis dan praktikal.</p>
+        </div>
+        <div class="card p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3 text-white">Brand & Marketing Strategy</h4>
+          <p>Membangun merek dan strategi pemasaran yang kuat untuk menembus pasar kompetitif.</p>
+        </div>
+        <div class="card p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-3 text-white">Financial Advisory</h4>
+          <p>Memberikan panduan keuangan dan investasi untuk mendukung keberlanjutan bisnis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimoni" class="section-bg py-20 px-6 fade-in" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1600&q=80');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h3 class="text-3xl font-bold text-white mb-10 text-center">Apa Kata Klien Kami</h3>
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
+        <div class="card p-6 rounded-xl shadow hover:shadow-md transition">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client" class="w-16 h-16 rounded-full mx-auto mb-4">
+          <p>"Layanan IVN Growth Lab sangat membantu kami dalam menentukan strategi ekspansi bisnis."</p>
+          <h4 class="mt-3 font-semibold text-white">Daus Wahyu Sifal</h4>
+        </div>
+        <div class="card p-6 rounded-xl shadow hover:shadow-md transition">
+          <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Client" class="w-16 h-16 rounded-full mx-auto mb-4">
+          <p>"Pendekatan mereka sangat profesional dan hasilnya nyata untuk pertumbuhan perusahaan kami."</p>
+          <h4 class="mt-3 font-semibold text-white">Fafa Rama Bayiku</h4>
+        </div>
+        <div class="card p-6 rounded-xl shadow hover:shadow-md transition">
+          <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="Client" class="w-16 h-16 rounded-full mx-auto mb-4">
+          <p>"Tim IVN Growth Lab mampu memahami kebutuhan kami dengan cepat dan memberi solusi tepat sasaran."</p>
+          <h4 class="mt-3 font-semibold text-white">Chalvin Madun Kinclong</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="section-bg py-20 px-6 fade-in" style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h3 class="text-3xl font-bold text-white mb-8 text-center">Hubungi Kami</h3>
+      <form action="https://formsubmit.co/ivannafinuribrahim@gmail.com" method="POST" class="card max-w-4xl mx-auto p-8 space-y-4 rounded-xl">
+        <input type="hidden" name="_captcha" value="false">
+        <div>
+          <label class="block text-sm font-semibold mb-1">Nama Lengkap</label>
+          <input type="text" name="nama" required class="w-full border border-gray-300 text-gray-900 rounded-lg p-3 focus:border-blue-600 focus:ring-blue-600">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold mb-1">Email</label>
+          <input type="email" name="email" required class="w-full border border-gray-300 text-gray-900 rounded-lg p-3 focus:border-blue-600 focus:ring-blue-600">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold mb-1">Pesan</label>
+          <textarea name="pesan" rows="5" required class="w-full border border-gray-300 text-gray-900 rounded-lg p-3 focus:border-blue-600 focus:ring-blue-600"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-900 transition-all">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-800 to-blue-900 text-white text-center py-6">
+    <p>&copy; 2025 IVN Growth Lab | Grow Smarter, Scale Faster</p>
+  </footer>
+
+  <!-- Animasi Scroll -->
+  <script>
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+    elements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
